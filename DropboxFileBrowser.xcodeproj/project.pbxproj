@@ -11,9 +11,40 @@
 		263344D11516F7F3009FE08C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 263344CF1516F7F3009FE08C /* InfoPlist.strings */; };
 		263344D31516F7F3009FE08C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 263344D21516F7F3009FE08C /* main.m */; };
 		263344D71516F7F3009FE08C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 263344D51516F7F3009FE08C /* Credits.rtf */; };
-		263344DA1516F7F3009FE08C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 263344D91516F7F3009FE08C /* AppDelegate.m */; };
-		263344DD1516F7F3009FE08C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263344DB1516F7F3009FE08C /* MainMenu.xib */; };
+		263344DA1516F7F3009FE08C /* FileBrowserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 263344D91516F7F3009FE08C /* FileBrowserAppDelegate.m */; };
+		263344E61516F821009FE08C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263344E51516F821009FE08C /* Security.framework */; };
+		263344EC1516F937009FE08C /* FileSystemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 263344EB1516F937009FE08C /* FileSystemItem.m */; };
+		263344EF1516F968009FE08C /* FileBrowserDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 263344EE1516F968009FE08C /* FileBrowserDataSource.m */; };
+		263344FC1516FA40009FE08C /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263344F91516FA40009FE08C /* LogInView.xib */; };
+		263344FD1516FA40009FE08C /* BrowserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263344FA1516FA40009FE08C /* BrowserView.xib */; };
+		263344FE1516FA40009FE08C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263344FB1516FA40009FE08C /* MainMenu.xib */; };
+		267F6B781518768A00BDB86F /* FileBrowserCommonKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F6B771518768A00BDB86F /* FileBrowserCommonKeys.m */; };
+		2694E5A0151EE84900F74D49 /* DropboxOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2694E59F151EE84900F74D49 /* DropboxOSX.framework */; };
+		2694E5A2151EEB6900F74D49 /* DropboxOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2694E59F151EE84900F74D49 /* DropboxOSX.framework */; };
+		2694E5AB151EEE7500F74D49 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 2694E5A4151EEE7500F74D49 /* delete.png */; };
+		2694E5AC151EEE7500F74D49 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 2694E5A5151EEE7500F74D49 /* download.png */; };
+		2694E5AD151EEE7500F74D49 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 2694E5A6151EEE7500F74D49 /* error.png */; };
+		2694E5AE151EEE7500F74D49 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2694E5A7151EEE7500F74D49 /* logo.png */; };
+		2694E5AF151EEE7500F74D49 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 2694E5A8151EEE7500F74D49 /* logout.png */; };
+		2694E5B0151EEE7500F74D49 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2694E5A9151EEE7500F74D49 /* refresh.png */; };
+		2694E5B1151EEE7500F74D49 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 2694E5AA151EEE7500F74D49 /* upload.png */; };
+		2694E5B4151EEF6500F74D49 /* FileBrowserWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2694E5B3151EEF6500F74D49 /* FileBrowserWindowController.m */; };
+		2694E5B5151EF12400F74D49 /* FileBrowserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2694E558151ED63700F74D49 /* FileBrowserLoginViewController.m */; };
+		2694E5B6151EF13100F74D49 /* FileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263344F11516F998009FE08C /* FileBrowserViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2694E5A1151EEB3F00F74D49 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2694E5A2151EEB6900F74D49 /* DropboxOSX.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		263344C21516F7F3009FE08C /* DropboxFileBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropboxFileBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,14 +52,37 @@
 		263344C91516F7F3009FE08C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		263344CA1516F7F3009FE08C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		263344CB1516F7F3009FE08C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		263344CE1516F7F3009FE08C /* DropboxFileBrowser-Info.plist */ = {isa = PBXFileReference; path = "DropboxFileBrowser-Info.plist"; sourceTree = "<group>"; };
+		263344CE1516F7F3009FE08C /* DropboxFileBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropboxFileBrowser-Info.plist"; sourceTree = "<group>"; };
 		263344D01516F7F3009FE08C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		263344D21516F7F3009FE08C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		263344D41516F7F3009FE08C /* DropboxFileBrowser-Prefix.pch */ = {isa = PBXFileReference; path = "DropboxFileBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		263344D41516F7F3009FE08C /* DropboxFileBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DropboxFileBrowser-Prefix.pch"; sourceTree = "<group>"; };
 		263344D61516F7F3009FE08C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		263344D81516F7F3009FE08C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		263344D91516F7F3009FE08C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		263344DC1516F7F3009FE08C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		263344D81516F7F3009FE08C /* FileBrowserAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserAppDelegate.h; sourceTree = "<group>"; };
+		263344D91516F7F3009FE08C /* FileBrowserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserAppDelegate.m; sourceTree = "<group>"; };
+		263344E51516F821009FE08C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		263344EA1516F937009FE08C /* FileSystemItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemItem.h; sourceTree = "<group>"; };
+		263344EB1516F937009FE08C /* FileSystemItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystemItem.m; sourceTree = "<group>"; };
+		263344ED1516F968009FE08C /* FileBrowserDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileBrowserDataSource.h; sourceTree = "<group>"; };
+		263344EE1516F968009FE08C /* FileBrowserDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileBrowserDataSource.m; sourceTree = "<group>"; };
+		263344F01516F998009FE08C /* FileBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserViewController.h; sourceTree = "<group>"; };
+		263344F11516F998009FE08C /* FileBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserViewController.m; sourceTree = "<group>"; };
+		263344F91516FA40009FE08C /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInView.xib; sourceTree = "<group>"; };
+		263344FA1516FA40009FE08C /* BrowserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserView.xib; sourceTree = "<group>"; };
+		263344FB1516FA40009FE08C /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		267F6B761518768A00BDB86F /* FileBrowserCommonKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileBrowserCommonKeys.h; sourceTree = "<group>"; };
+		267F6B771518768A00BDB86F /* FileBrowserCommonKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileBrowserCommonKeys.m; sourceTree = "<group>"; };
+		2694E557151ED63700F74D49 /* FileBrowserLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserLoginViewController.h; sourceTree = "<group>"; };
+		2694E558151ED63700F74D49 /* FileBrowserLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserLoginViewController.m; sourceTree = "<group>"; };
+		2694E59F151EE84900F74D49 /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = DropboxFileBrowser/DropboxOSX.framework; sourceTree = "<group>"; };
+		2694E5A4151EEE7500F74D49 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete.png; path = resources/delete.png; sourceTree = SOURCE_ROOT; };
+		2694E5A5151EEE7500F74D49 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = download.png; path = resources/download.png; sourceTree = SOURCE_ROOT; };
+		2694E5A6151EEE7500F74D49 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = error.png; path = resources/error.png; sourceTree = SOURCE_ROOT; };
+		2694E5A7151EEE7500F74D49 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = resources/logo.png; sourceTree = SOURCE_ROOT; };
+		2694E5A8151EEE7500F74D49 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = resources/logout.png; sourceTree = SOURCE_ROOT; };
+		2694E5A9151EEE7500F74D49 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh.png; path = resources/refresh.png; sourceTree = SOURCE_ROOT; };
+		2694E5AA151EEE7500F74D49 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upload.png; path = resources/upload.png; sourceTree = SOURCE_ROOT; };
+		2694E5B2151EEF6400F74D49 /* FileBrowserWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileBrowserWindowController.h; sourceTree = "<group>"; };
+		2694E5B3151EEF6500F74D49 /* FileBrowserWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileBrowserWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263344E61516F821009FE08C /* Security.framework in Frameworks */,
 				263344C71516F7F3009FE08C /* Cocoa.framework in Frameworks */,
+				2694E5A0151EE84900F74D49 /* DropboxOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +119,8 @@
 		263344C51516F7F3009FE08C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2694E59F151EE84900F74D49 /* DropboxOSX.framework */,
+				263344E51516F821009FE08C /* Security.framework */,
 				263344C61516F7F3009FE08C /* Cocoa.framework */,
 				263344C81516F7F3009FE08C /* Other Frameworks */,
 			);
@@ -82,9 +140,23 @@
 		263344CC1516F7F3009FE08C /* DropboxFileBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				263344D81516F7F3009FE08C /* AppDelegate.h */,
-				263344D91516F7F3009FE08C /* AppDelegate.m */,
-				263344DB1516F7F3009FE08C /* MainMenu.xib */,
+				263344D81516F7F3009FE08C /* FileBrowserAppDelegate.h */,
+				263344D91516F7F3009FE08C /* FileBrowserAppDelegate.m */,
+				263344EA1516F937009FE08C /* FileSystemItem.h */,
+				263344EB1516F937009FE08C /* FileSystemItem.m */,
+				263344ED1516F968009FE08C /* FileBrowserDataSource.h */,
+				263344EE1516F968009FE08C /* FileBrowserDataSource.m */,
+				2694E5B2151EEF6400F74D49 /* FileBrowserWindowController.h */,
+				2694E5B3151EEF6500F74D49 /* FileBrowserWindowController.m */,
+				263344F01516F998009FE08C /* FileBrowserViewController.h */,
+				263344F11516F998009FE08C /* FileBrowserViewController.m */,
+				2694E557151ED63700F74D49 /* FileBrowserLoginViewController.h */,
+				2694E558151ED63700F74D49 /* FileBrowserLoginViewController.m */,
+				267F6B761518768A00BDB86F /* FileBrowserCommonKeys.h */,
+				267F6B771518768A00BDB86F /* FileBrowserCommonKeys.m */,
+				263344F91516FA40009FE08C /* LogInView.xib */,
+				263344FA1516FA40009FE08C /* BrowserView.xib */,
+				263344FB1516FA40009FE08C /* MainMenu.xib */,
 				263344CD1516F7F3009FE08C /* Supporting Files */,
 			);
 			path = DropboxFileBrowser;
@@ -93,6 +165,7 @@
 		263344CD1516F7F3009FE08C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2694E5A3151EEE6200F74D49 /* resources */,
 				263344CE1516F7F3009FE08C /* DropboxFileBrowser-Info.plist */,
 				263344CF1516F7F3009FE08C /* InfoPlist.strings */,
 				263344D21516F7F3009FE08C /* main.m */,
@@ -100,6 +173,20 @@
 				263344D51516F7F3009FE08C /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2694E5A3151EEE6200F74D49 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2694E5A4151EEE7500F74D49 /* delete.png */,
+				2694E5A5151EEE7500F74D49 /* download.png */,
+				2694E5A6151EEE7500F74D49 /* error.png */,
+				2694E5A7151EEE7500F74D49 /* logo.png */,
+				2694E5A8151EEE7500F74D49 /* logout.png */,
+				2694E5A9151EEE7500F74D49 /* refresh.png */,
+				2694E5AA151EEE7500F74D49 /* upload.png */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +199,7 @@
 				263344BE1516F7F3009FE08C /* Sources */,
 				263344BF1516F7F3009FE08C /* Frameworks */,
 				263344C01516F7F3009FE08C /* Resources */,
+				2694E5A1151EEB3F00F74D49 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -154,7 +242,16 @@
 			files = (
 				263344D11516F7F3009FE08C /* InfoPlist.strings in Resources */,
 				263344D71516F7F3009FE08C /* Credits.rtf in Resources */,
-				263344DD1516F7F3009FE08C /* MainMenu.xib in Resources */,
+				263344FC1516FA40009FE08C /* LogInView.xib in Resources */,
+				263344FD1516FA40009FE08C /* BrowserView.xib in Resources */,
+				263344FE1516FA40009FE08C /* MainMenu.xib in Resources */,
+				2694E5AB151EEE7500F74D49 /* delete.png in Resources */,
+				2694E5AC151EEE7500F74D49 /* download.png in Resources */,
+				2694E5AD151EEE7500F74D49 /* error.png in Resources */,
+				2694E5AE151EEE7500F74D49 /* logo.png in Resources */,
+				2694E5AF151EEE7500F74D49 /* logout.png in Resources */,
+				2694E5B0151EEE7500F74D49 /* refresh.png in Resources */,
+				2694E5B1151EEE7500F74D49 /* upload.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +263,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				263344D31516F7F3009FE08C /* main.m in Sources */,
-				263344DA1516F7F3009FE08C /* AppDelegate.m in Sources */,
+				263344DA1516F7F3009FE08C /* FileBrowserAppDelegate.m in Sources */,
+				263344EC1516F937009FE08C /* FileSystemItem.m in Sources */,
+				263344EF1516F968009FE08C /* FileBrowserDataSource.m in Sources */,
+				267F6B781518768A00BDB86F /* FileBrowserCommonKeys.m in Sources */,
+				2694E5B4151EEF6500F74D49 /* FileBrowserWindowController.m in Sources */,
+				2694E5B5151EF12400F74D49 /* FileBrowserLoginViewController.m in Sources */,
+				2694E5B6151EF13100F74D49 /* FileBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +292,6 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		263344DB1516F7F3009FE08C /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				263344DC1516F7F3009FE08C /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -205,7 +300,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -232,7 +327,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -250,6 +345,11 @@
 		263344E11516F7F3009FE08C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../dropbox-osx-sdk-1.2-b2\"",
+					"\"$(SRCROOT)/DropboxFileBrowser\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropboxFileBrowser/DropboxFileBrowser-Prefix.pch";
 				INFOPLIST_FILE = "DropboxFileBrowser/DropboxFileBrowser-Info.plist";
@@ -261,6 +361,11 @@
 		263344E21516F7F3009FE08C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../dropbox-osx-sdk-1.2-b2\"",
+					"\"$(SRCROOT)/DropboxFileBrowser\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropboxFileBrowser/DropboxFileBrowser-Prefix.pch";
 				INFOPLIST_FILE = "DropboxFileBrowser/DropboxFileBrowser-Info.plist";
@@ -288,6 +393,7 @@
 				263344E21516F7F3009FE08C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

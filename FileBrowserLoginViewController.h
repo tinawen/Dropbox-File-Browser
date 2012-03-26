@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  FileBrowserLoginViewController.h
 //  DropboxFileBrowser
 //
 //  Created by tina on 3/18/12.
@@ -8,8 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-
-@property (assign) IBOutlet NSWindow *window;
+@interface FileBrowserLoginViewController : NSViewController
 
 @end
